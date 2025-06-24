@@ -1,10 +1,14 @@
-import React from 'react'
-import { Header } from '../../../components/indexComponents'
+import React from 'react';
+import { Header } from '../../../components/Header';
 
 export const StudentList = () => {
   return (
-    <>
-      <Header userRole={JSON.parse(localStorage.getItem("userRole"))} />
-    </>
-  )
-}
+    <div>
+     
+             <Header userRole={JSON.parse(localStorage.getItem("userRole"))}/>
+
+
+    </div>
+  );
+};
+

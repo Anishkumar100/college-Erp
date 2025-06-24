@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import {
+  // Admin
   AdminDashBoard,
   Enrollment,
   StudentList,
@@ -14,12 +15,13 @@ import {
   AddFaculty,
   FacultyList,
   AssignSubjects,
-  AdminTimetable,
+  TimeTable,
   FeeStructures,
   Payments,
-  AdminReports,
+  Reports,
   AuditTrail,
 
+  // Teacher
   TeacherDashBoard,
   TeacherSubjects,
   Assessments,
@@ -28,6 +30,7 @@ import {
   Announcements,
   TeacherReports,
 
+  // Student
   StudentDashBoard,
   MyCourses,
   StudyMaterials,
@@ -36,6 +39,7 @@ import {
   StudentPayments,
   Performance,
 
+  // Developer
   DeveloperDashBoard,
   APIAccess,
   DatabaseConsole,
@@ -43,6 +47,7 @@ import {
   RoleManagement,
   BulkImport,
 
+  // Shared
   LoginPage,
   PageNotFound
 } from '../pages/indexPages';
@@ -69,10 +74,10 @@ export const AllRoutes = () => {
         <Route path="/dashboard/admin/faculty/add" element={<AddFaculty />} />
         <Route path="/dashboard/admin/faculty" element={<FacultyList />} />
         <Route path="/dashboard/admin/faculty/assign" element={<AssignSubjects />} />
-        <Route path="/dashboard/admin/timetable" element={<AdminTimetable />} />
+        <Route path="/dashboard/admin/timetable" element={<TimeTable />} />
         <Route path="/dashboard/admin/finance/structure" element={<FeeStructures />} />
         <Route path="/dashboard/admin/finance/payments" element={<Payments />} />
-        <Route path="/dashboard/admin/report" element={<AdminReports />} />
+        <Route path="/dashboard/admin/report" element={<Reports />} />
         <Route path="/dashboard/admin/audit-trail" element={<AuditTrail />} />
       </Route>
 
@@ -108,7 +113,7 @@ export const AllRoutes = () => {
         <Route path="/dashboard/developer/import" element={<BulkImport />} />
       </Route>
 
-      {/* Catch All */}
+      {/* Catch-All */}
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

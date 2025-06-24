@@ -9,23 +9,22 @@ export { LoginPage } from "./LoginPage";
 export { PageNotFound } from "./PageNotFound";
 
 // Admin Pages
-export { Enrollment } from "./dashboards/admin/Enrollment";
-export { StudentList } from "./dashboards/admin/StudentList";
-export { Promotion } from "./dashboards/admin/Promotion";
-export { Departments } from "./dashboards/admin/Departments";
-export { Programs } from "./dashboards/admin/Programs";
 export { AcademicYears } from "./dashboards/admin/AcademicYears";
-export { Batches } from "./dashboards/admin/Batches";
-export { Subjects } from "./dashboards/admin/Subjects";
 export { AddFaculty } from "./dashboards/admin/AddFaculty";
-export { FacultyList } from "./dashboards/admin/FacultyList";
 export { AssignSubjects } from "./dashboards/admin/AssignSubjects";
-export { AdminTimetable } from "./dashboards/admin/AdminTimetable";
+export { AuditTrail } from "./dashboards/admin/AuditTrail";
+export { Batches } from "./dashboards/admin/Batches";
+export { Departments } from "./dashboards/admin/Departments";
+export { Enrollment } from "./dashboards/admin/Enrollment";
+export { FacultyList } from "./dashboards/admin/FacultyList";
 export { FeeStructures } from "./dashboards/admin/FeeStructures";
 export { Payments } from "./dashboards/admin/Payments";
-export { AdminReports } from "./dashboards/admin/AdminReports";
-export { AuditTrail } from "./dashboards/admin/AuditTrail";
-
+export { Programs } from "./dashboards/admin/Programs";
+export { Promotion } from "./dashboards/admin/Promotion";
+export { Reports } from "./dashboards/admin/Reports";
+export { StudentList } from "./dashboards/admin/StudentList";
+export { Subjects } from "./dashboards/admin/Subjects";
+export { TimeTable } from "./dashboards/admin/TimeTable";
 // Teacher Pages
 export { TeacherSubjects } from "./dashboards/teacher/TeacherSubjects";
 export { Assessments } from "./dashboards/teacher/Assessments";
