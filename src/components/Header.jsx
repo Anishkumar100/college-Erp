@@ -7,7 +7,7 @@ export const Header = ({ userRole }) => {
   const [visible, setVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark" || true;
+    return localStorage.getItem("theme") === "dark" || false;
   });
 
   useEffect(() => {
